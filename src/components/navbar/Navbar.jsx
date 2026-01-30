@@ -1,3 +1,4 @@
+"use client"; //this is how to tell use client side rendering when we want to do a user interactivity in the page.
 import Link from "next/link";
 import React from "react";
 
@@ -44,6 +45,14 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
+        <button
+          onClick={() => {
+            console.log("logged out");
+          }}
+        >
+          {" "}
+          Logout
+        </button>
       </div>
     </div>
   );
